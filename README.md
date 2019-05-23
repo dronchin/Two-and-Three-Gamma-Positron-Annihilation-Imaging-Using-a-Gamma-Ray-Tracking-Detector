@@ -15,7 +15,7 @@ any of the data required to reproduce results.
 ## Requirements
 
 This project primarly requires python 3 with dependencies on the numpy and matplotlib.pyplot libraries.
-A few files have dependencies on the pyqtgraph library.
+A few files under "Two-Gamma Imaging>3Dimensions attempt" have dependencies on the pyqtgraph library.
 
 ## Acknowledgments
 ### Advisors
