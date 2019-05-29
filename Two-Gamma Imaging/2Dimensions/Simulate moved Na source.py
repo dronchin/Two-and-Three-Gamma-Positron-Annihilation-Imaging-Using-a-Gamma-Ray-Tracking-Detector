@@ -8,7 +8,6 @@ Created on Mon Jan 14 15:14:07 2019
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.interpolate import interp2d
-import winsound
 import timeit
 
 starttime = timeit.default_timer()
@@ -62,6 +61,8 @@ def getsource(filename):
     return source
 
 def getlocation(i, n, centx, centy, centz, pixsize):
+    ''' calculates the decay position of the positronium based on what pixel was selected from the 
+    autoradiograph data '''
     row = i//n - n/2
     col = i%n - n/2
     xpos = centx + row*pixsize + np.random.normal(0,scale=pixsize/3)
@@ -173,6 +174,5 @@ plt.show()
 # timer info
 stoptime = timeit.default_timer()
 print("time taken: ", stoptime - starttime)  
-winsound.Beep(800,1000)  
 
 #
